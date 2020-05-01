@@ -1,0 +1,77 @@
+done
+
+21st
+==>get events appear 2 per row
+==>group events by year
+==>show year in header cell
+==>make that into a function 
+
+=== search ===
+header.php /query_functions.php
+' causing the query to fail
+
+20th
+>reader - show 
+description and readings - added if statement - only show if description value is not null/count > 0
+
+==> update db for events to refer to placeholder image
+==>make placeholder image
+
+=== events > index.php ===
+amended query so it only shows event with visible = 1
+
+=== search > index.php ===
+addressed bug where apostrophes caused query error. 
+added function that replace single apostophe with two apostrophes.
+
+14th
+>update schema diagram to reflect v3
+
+>update schema in PHPMyAdmin to reflect schema diagram v3
+
+>update pages to reflect v3 schema
+==>change references to Reading/reading to Event/event
+
+>update schema diagram to reflect v4
+
+>update schema in PHPMyAdmin to reflect schema diagram v4
+
+>enter the data
+
+=== events > show.php ===
+show readings associated to that event
+
+=== readers > show.php ===
+show readings associated to that reader
+
+
+13th
+=== search > index.php ===
+>for readings, show readers 
+>if no results are returned for any one of the queries for readings/readers, then don't display the title or table for that query. instead, show 'no results'
+
+>backed up DB
+>duplicated hi_zero folder, renamed hi_zero-2020-04-13
+
+>got answer from joe about whether he's happy with the naming system
+
+>downloaded the audio files
+
+
+12th
+CORE FUNCTIONALITY
+=== readers > show.php ===
+==>added link to recording 
+==>demoed to Robbie, got feedback
+==>created db-schema-v2
+
+=== search > index.php ===
+can search by reader and readings
+for readings, shows thumbnail, reading name, date
+shows reader name
+clicking on thumbnail, reading name, date goes to reading/show.php
+clicking on reader goes to reader/show.php
+
+DIPLAY ISSUES
+=== readers > show.php ===
+==>changed order so readers goes first, then poster, then date, then recording.
