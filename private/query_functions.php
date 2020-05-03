@@ -1,5 +1,6 @@
 <?php
 
+    # finds all visible events for one particular year
     function find_all_events($year) {
         global $db;
 
@@ -13,6 +14,7 @@
         return $result;
     }
 
+    # finds event for the page id passed from events listing page
     function find_event_by_id($id) {
         global $db;
 
@@ -25,6 +27,7 @@
         return $event; //returns an assoc. array
     }
 
+    // finds all visible readers
     function find_all_readers() {
         global $db;
         
@@ -37,6 +40,7 @@
         return $result;
     }
 
+    # finds reader for the reader id passed from readers listing page
     function find_reader_by_id($id) {
         global $db;
 
@@ -49,6 +53,7 @@
         return $reader; //returns an assoc. array
     }
 
+    # finds events where one particular reader attended, passing in reader id
     function find_events_for_reader($id) {
         global $db;
 
@@ -63,7 +68,7 @@
         return $result;
     }
 
-
+    # finds all readers where one particular event, passing in event id
     function find_readers_for_event($id) {
         global $db;
 
@@ -79,6 +84,7 @@
         return $result;
     }
 
+    # finds all readings where one particular event, passing in event id
     function find_readings_for_event($id) {
         global $db;
 
@@ -93,6 +99,7 @@
         return $result;
     }
 
+    # finds all readings where one particular reader, passing in reader id
     function find_readings_for_reader($id) {
         global $db;
 
@@ -108,6 +115,7 @@
         return $result;
     }
 
+    # searches all events for search query. searches date, event name and reader name
     function search_events($q) {
         global $db;
 
@@ -127,6 +135,7 @@
         return $result;
     }
 
+    # searches all readers for search query
     function search_readers($q) {
         global $db;
 

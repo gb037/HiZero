@@ -1,10 +1,12 @@
 <footer>
+      <!-- prints copyright message-->
       &copy; <?php echo date('Y'); ?> Hi Zero
-    </footer>
+  </footer>
 
   </body>
 </html>
 
 <?php
+  # closes database connection
   db_disconnect($db);
 ?>
